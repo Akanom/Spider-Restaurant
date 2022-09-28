@@ -2,3 +2,9 @@
 .navbar-nav a{
     font-size: 18px;
 }
+
+/* Footer */
+.site-footer {
+    background-image: linear-gradient(#d8c5c9, white);
+    padding: 20px 0;
+  }
