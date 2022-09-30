@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import React from "react";
 
-
 export default function Product() {
   const [data, setData] = useState([]);
   const [filter, setFilter] = useState(data);
@@ -24,17 +23,56 @@ export default function Product() {
     };
     getProducts();
   }, []);
+  const Loading = () => {
+    return <>Loading...</>;
+  };
+  const ShowProducts = () => {
+    return (
+      <>
+        <div className="buttons d-flex justify-content-center mb-5 pb-5">
+          <button className="btn btn-outline-dark me-2">All</button>
+          <button className="btn btn-outline-dark me-2">Pizza</button>
+          <button className="btn btn-outline-dark me-2">Burger</button>
+          <button className="btn btn-outline-dark me-2">Drinks</button>
+        </div>
+        {filter.map((product) => {
+          return (
+            <>
+              <div className="col-md-3 mb-4">
+                <div class="card h-100 text-center p-4" key={product.id}>
+                  <img src={product.image} class="card-img-top" alt={product.title} height="200px" />
+                  <div class="card-body">
+                    <h5 class="card-title mb-0">{product.title.substring(0,12)}</h5>
+                    <p class="card-text">
+                      {product.price}
+                    </p>
+                    <a href="#" class="btn btn-outline-dark">
+                      Buy now
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </>
+          );
+        })}
+      </>
+    );
+  };
   return (
     <div>
       <div className="container my-5 py-5">
         <div className="row">
           <div className="col-12 mb-5">
-            <h1 className="display-6 fw-bolder text-center">This week promotion</h1>
+            <h1 className="display-6 fw-bolder text-center">
+              This week promotion
+            </h1>
+            <hr />
           </div>
+        </div>
+        <div className="row justify-content-center">
+          {loading ? <Loading /> : <ShowProducts />}
         </div>
       </div>
     </div>
   );
 }
-
-

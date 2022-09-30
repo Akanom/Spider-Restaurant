@@ -19,7 +19,7 @@
 },{
     "id":4,
     "title":"Pizza Beaf",
-    "image": "./images/pizza-beef.png",
+    "image": "./images/pizza-beaf.png",
     "price":"$7.5",
     "description":"Choice: chilli sauce with garlic dressing, homrmade herb and more"
 },{
@@ -30,7 +30,7 @@
     "description":"Choice: chilli sauce with garlic dressing, homrmade herb and more"
 },{
     "id":6,
-    "title":"Doner in bread",
+    "title":"Doner bread",
     "image": "./images/doner.jpg",
     "price":"$6",
     "description":"Choice: chilli sauce with garlic dressing, homrmade herb and more"
@@ -60,7 +60,7 @@
     "description":"Choice: chilli sauce with garlic dressing, homrmade herb and more"
 },{
     "id":11,
-    "title":"Vegetarian dishes",
+    "title":"Vege dishes",
     "image": "./images/Vegetarian-Recipes.png",
     "price":"$7",
     "description":"Choice: chilli sauce with garlic dressing, homrmade herb and more"
@@ -72,7 +72,7 @@
     "description":"Choice: with chicken, onion, rocket, cheese, cocktail sauce, chilli, kectchup or mayonnaise"
 },{
     "id":13,
-    "title":"Vegetarian Burger",
+    "title":"Vege Burger",
     "image": "./images/vegetarian-burger.png",
     "price":"$5.5",
     "description":"Choice: water, pea protein isolate, diced onions, rapeseed oil, beetroot, tomato pasta, wheat protein, potato starch"

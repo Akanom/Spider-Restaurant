@@ -36,10 +36,12 @@ export default function Home() {
         </div>
       </div>
       <Product/>
+      
       <div className="container">
         <div className="row">
-          <p className="card-text  fs-2 text-center">How to order</p>
+          <p className="display-6 fw-bolder text-center">How to order</p>
           <div className="row row-no-margin">
+          <hr />
             <div className="col">
               <img
                 src="/assets/location.jpg"
@@ -69,6 +71,7 @@ export default function Home() {
               </div>
               <p className="text-center ">Pay</p>
             </div>
+            
           </div>
         </div>
       </div>
