@@ -3,7 +3,7 @@ import Product from "./Product";
 
 export default function Home() {
   return (
-    <div classNameName="hero">
+    <div className="hero">
       <div className="card bg-dark text-white border-0">
         <img
           src="/assets/bg.jpg"

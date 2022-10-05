@@ -1,14 +1,30 @@
-import './App.css';
-import Navbar from './components/Navbar';
-import Home from './components/Home';
-import Footer from './components/Footer';
+import "./App.css";
+import Navbar from "./components/Navbar";
+import Home from "./components/Home";
+import {  Route, Switch } from "react-router-dom";
+import Product from "./components/Product";
+import ProductOrdered from "./components/ProductOrdered";
+import Footer from "./components/Footer"
+import About from "./components/About";
+import Contact from "./components/Contact";
 
 function App() {
   return (
     <>
-    <Navbar/>
-    <Home/>
-    <Footer/>
+    <Navbar />
+      <Switch>
+        
+        
+        <Route exact path="/" component={Home} />
+        <Route exact path="/products" component={Product} />
+        <Route exact   path="products/:id" component={ProductOrdered} />
+        <Route exact  path = "/about" component={About}/>
+        <Route exact path ="/contact" component={Contact}/>
+        
+      </Switch>
+      {/* <Home /> */}
+      <Footer/>
+      
     </>
   );
 }
