@@ -6,22 +6,23 @@ import { useDispatch } from "react-redux";
 import { addCart } from "../redux/action";
 
 export default function ProductOrdered() {
-  const { id } = useParams();
-  const [product, setProduct] = useState([]);
+  const [products, setProduct] = useState([]);
   const [loading, setLoading] = useState(false);
+  const { id } = useParams();
 
-const dispatch=useDispatch()
-const addProduct=(product)=>{
-  dispatch(addCart(product))
-}
+  const dispatch = useDispatch();
+  const addProduct = (products) => {
+    dispatch(addCart(products));
+  };
 
   useEffect(() => {
     const getProduct = async () => {
       setLoading(true);
-      const response = await fetch(`db.json/${id}`);
+      const response = await fetch(`./db.json/${id}`);
       setProduct(await response.json());
       setLoading(false);
-      console.log(product);
+      console.log(products);
+      console.log(setProduct);
     };
     getProduct();
   }, []);
@@ -49,20 +50,21 @@ const addProduct=(product)=>{
       <>
         <div className="col-md-6">
           <img
-            src={product.image}
-            alt={product.title}
+            src={products.image}
+            alt={products.title}
             height="400px"
             width="400px"
           />
         </div>
         <div className="col-md-6">
-          <h4 className="text-uppercase text-black-50">
-            {product.category}
-          </h4>
-          <h1 className="display-5">{product.title}</h1>
-          <h3 className="display-6 fw-bold my-4">{product.price}</h3>
-          <p className="lead">{product.description}</p>
-          <button className="btn btn-outline-dark px-4 py-2" onClick={()=>addProduct(product)}>
+          <h4 className="text-uppercase text-black-50">{products.category}</h4>
+          <h1 className="display-5">{products.title}</h1>
+          <h3 className="display-6 fw-bold my-4">{products.price}</h3>
+          <p className="lead">{products.description}</p>
+          <button
+            className="btn btn-outline-dark px-4 py-2"
+            onClick={() => addProduct(products)}
+          >
             Add to Cart
           </button>
           <NavLink to="/cart" className="btn btn-dark ms-2 px-3 py-2">

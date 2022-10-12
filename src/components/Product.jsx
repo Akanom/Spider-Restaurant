@@ -104,7 +104,7 @@ export default function Product() {
                     </h5>
                     <p class="card-text lead fw-bold">{product.price}</p>
                     <NavLink
-                      to={`/products/${product.id}`}
+                      to={`/product/${product.id}`}
                       class="btn btn-outline-dark"
                     >
                       Buy now
