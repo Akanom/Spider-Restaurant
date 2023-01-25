@@ -35,7 +35,7 @@ export default function Signup() {
               ></button>
             </div>
             <div className="modal-body">
-              {/* Form htmlForm login */}
+              {/* Form htmlFor login */}
               <button className="btn btn btn-primary w-100 mb-4">
                 <span className="fa fa-google me-2"></span>
                 Sign up with Google
@@ -46,7 +46,7 @@ export default function Signup() {
               </button>
               <form>
                 <div className="mb-3">
-                  <label htmlForm="exampleInput">
+                  <label htmlFor="exampleInput">
                     Username
                   </label>
                   <input
@@ -58,7 +58,7 @@ export default function Signup() {
                   
                 </div>
                 <div className="mb-3">
-                  <label htmlForm="exampleInputPassword1" className="form-label">
+                  <label htmlFor="exampleInputPassword1" className="form-label">
                     Password
                   </label>
                   <input
@@ -73,7 +73,7 @@ export default function Signup() {
                     className="form-check-input"
                     id="exampleCheck1"
                   />
-                  <label className="form-check-label" htmlForm="exampleCheck1">
+                  <label className="form-check-label" htmlFor="exampleCheck1">
                     Check me out
                   </label>
                 </div>

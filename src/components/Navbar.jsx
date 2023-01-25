@@ -1,12 +1,10 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { useSelector } from "react-redux";
 import Login from "./buttons/Login";
 import Signup from "./buttons/Signup";
-import Cartbtn from "./buttons/Cartbtn";
+import CartBtn from "./buttons/CartBtn";
 
 export default function Navbar() {
-  const state = useSelector((state) => state.handleCart);
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm">
@@ -49,24 +47,9 @@ export default function Navbar() {
               </li>
             </ul>
             <div className="button">
-            <Login />
-            <Signup/>
-            <Cartbtn/>
-              {/* <button className="btn"> */}
-
-              {/* <NavLink to="/login" className="btn btn-outline-dark"> */}
-              {/* <i className="fa fa-sign-in me-1"></i> Login */}
-              {/* </NavLink> */}
-              
-
-              {/* <NavLink to="/register" className="btn btn-outline-dark ms-2">
-                <i className="fa fa-user-plus me-1"></i> Register
-              </NavLink> */}
-              {/* <NavLink to="/cart" className="btn btn-outline-dark ms-2">
-                <i className="fa fa-shopping-cart me-1"></i> Cart (
-                {state.length})
-              </NavLink> */}
-              {/* </button> */}
+              <Login />
+              <Signup />
+              <CartBtn />
             </div>
           </div>
         </div>

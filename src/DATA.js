@@ -2,7 +2,7 @@ const DATA = [
   {
     id: 1,
     title: "Pizza Margarita",
-    image: "./images/Margherita.png",
+    image: "/images/Margherita.png",
     price: "$7.5",
     description:
       "Choice: chilli sauce with garlic dressing, homrmade herb and more",
@@ -11,7 +11,7 @@ const DATA = [
   {
     id: 2,
     title: "Pizza Salami",
-    image: "./images/salami.jpg",
+    image: "/images/salami.jpg",
     price: "$7.5",
     description: "Choice: cripsy, tomatoes, spices, fresh basil, salami",
     category: "pizza",
@@ -19,7 +19,7 @@ const DATA = [
   {
     id: 3,
     title: "Pizza Chicken",
-    image: "./images/pizza-chicken.png",
+    image: "/images/pizza-chicken.png",
     price: "$7.5",
     description:
       "Choice: chilli sauce with garlic dressing, homrmade herb and more",
@@ -28,7 +28,7 @@ const DATA = [
   {
     id: 4,
     title: "Pizza Beaf",
-    image: "./images/pizza-beaf.png",
+    image: "/images/pizza-beaf.png",
     price: "$7.5",
     description:
       "Choice: chilli sauce with garlic dressing, homrmade herb and more",
@@ -37,7 +37,7 @@ const DATA = [
   {
     id: 5,
     title: "Pizza Fungi",
-    image: "./images/pizza-fungi.jpg",
+    image: "/images/pizza-fungi.jpg",
     price: "$7.5",
     description:
       "Choice: chilli sauce with garlic dressing, homrmade herb and more",
@@ -46,7 +46,7 @@ const DATA = [
   {
     id: 6,
     title: "Doner bread",
-    image: "./images/doner.jpg",
+    image: "/images/doner.jpg",
     price: "$6",
     description:
       "Choice: chilli sauce with garlic dressing, homrmade herb and more",
@@ -55,7 +55,7 @@ const DATA = [
   {
     id: 7,
     title: "Doner Teller",
-    image: "./images/doner-teller.jpg",
+    image: "/images/doner-teller.jpg",
     price: "$9",
     description:
       "Choice: chilli sauce with garlic dressing, homrmade herb and more",
@@ -64,7 +64,7 @@ const DATA = [
   {
     id: 8,
     title: "Pasta Bolognese",
-    image: "./images/Bolognese-Sauce-pasta.jpg",
+    image: "/images/Bolognese-Sauce-pasta.jpg",
     price: "$11",
     description:
       "Choice: chilli sauce with garlic dressing, homrmade herb and more",
@@ -73,7 +73,7 @@ const DATA = [
   {
     id: 9,
     title: "Pork dishes",
-    image: "./images/pork-dish.png",
+    image: "/images/pork-dish.png",
     price: "$15",
     description:
       "Choice: chilli sauce with garlic dressing, homrmade herb and more",
@@ -82,7 +82,7 @@ const DATA = [
   {
     id: 10,
     title: "Fish dishes",
-    image: "./images/fish-dish.jpg",
+    image: "/images/fish-dish.jpg",
     price: "$8",
     description:
       "Choice: chilli sauce with garlic dressing, homrmade herb and more",
@@ -91,7 +91,7 @@ const DATA = [
   {
     id: 11,
     title: "Vege dishes",
-    image: "./images/Vegetarian-Recipes.png",
+    image: "/images/Vegetarian-Recipes.png",
     price: "$7",
     description:
       "Choice: chilli sauce with garlic dressing, homrmade herb and more",
@@ -100,7 +100,7 @@ const DATA = [
   {
     id: 12,
     title: "Chicken Burger",
-    image: "./images/chicken-burger.jpg",
+    image: "/images/chicken-burger.jpg",
     price: "$6",
     description:
       "Choice: with chicken, onion, rocket, cheese, cocktail sauce, chilli, kectchup or mayonnaise",
@@ -109,7 +109,7 @@ const DATA = [
   {
     id: 13,
     title: "Vege Burger",
-    image: "./images/vegetarian-burger.png",
+    image: "/images/vegetarian-burger.png",
     price: "$5.5",
     description:
       "Choice: water, pea protein isolate, diced onions, rapeseed oil, beetroot, tomato pasta, wheat protein, potato starch",
@@ -118,7 +118,7 @@ const DATA = [
   {
     id: 14,
     title: "Beef Burger",
-    image: "./images/beef-burger.jpg",
+    image: "/images/beef-burger.jpg",
     price: "$6",
     description:
       "Choice: with beef, onion, rocket, cheese, cocktail sauce, chilli, kectchup or mayonnaise",
@@ -127,7 +127,7 @@ const DATA = [
   {
     id: 15,
     title: "Coke",
-    image: "./images/coke.png",
+    image: "/images/coke.png",
     price: "$2.5",
     description: "33cl",
     category: "drink",
@@ -135,7 +135,7 @@ const DATA = [
   {
     id: 16,
     title: "Fanta",
-    image: "./images/fanta.jpg",
+    image: "/images/fanta.jpg",
     price: "$2.5",
     description: "33cl",
     category: "drink",
@@ -143,7 +143,7 @@ const DATA = [
   {
     id: 17,
     title: "Red Bull",
-    image: "./images/red-bull.jpg",
+    image: "/images/red-bull.jpg",
     price: "$2.5",
     description: "Energy drink",
     category: "drink",
@@ -151,7 +151,7 @@ const DATA = [
   {
     id: 18,
     title: "Water",
-    image: "./images/bottle-water.png",
+    image: "/images/bottle-water.png",
     price: "$1.5",
     description: "33cl",
     category: "drink",
@@ -159,7 +159,7 @@ const DATA = [
   {
     id: 19,
     title: "Orange juice",
-    image: "./images/orange-juice.jpg",
+    image: "/images/orange-juice.jpg",
     price: "$2.5",
     description: "100% pure squeezed, pasturized orange juice, 33cl",
     category: "drink",
@@ -167,11 +167,11 @@ const DATA = [
   {
     id: 20,
     title: "Apple juice",
-    image: "./images/apple-juice.jpg",
+    image: "/images/apple-juice.jpg",
     price: "$2.5",
     description: "33cl",
     category: "drink",
   },
 ];
 
-export default DATA
+export default DATA;
