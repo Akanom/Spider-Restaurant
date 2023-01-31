@@ -193,6 +193,7 @@ Card Item
 }
 
 
+
 @media(max-width: 800px){
   .cart{
     flex-direction: column-reverse;

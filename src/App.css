@@ -8,3 +8,30 @@
     background-image: linear-gradient(#d8c5c9, white);
     padding: 20px 0;
   }
+
+.qty-con{
+    display: flex;
+    gap: 5px;
+}
+
+.qty-con input{
+    width: 100px;
+    outline: none;
+}
+
+.qty-con div{
+    padding: 7px 20px;
+    font-weight: bold;
+    background: orange;
+    color: white;
+    user-select: none;
+    font-size: 24px;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.qty-con div:hover{
+    background: white;
+    color: orange;
+    border: 1px solid orange;
+}
