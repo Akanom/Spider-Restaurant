@@ -2,14 +2,13 @@ import { useSelector } from "react-redux";
 
 export default function Checkout() {
   const state = useSelector((state) => state.addItem)
-  var total = 0
+  let total = 0
   const itemList=(item)=>{
     total = total+item.price
     return(
         <li className="list-group-item d-flex justify-content-between lh-sm">
                 <div>
                   <h6 className="my-0">{item.title}</h6>
-                  <small className="text-muted">Brief description</small>
                 </div>
                 <span className="text-muted">{item.price}</span>
               </li>
