@@ -23,8 +23,8 @@ export default function Cart() {
             <img
               src={cartItem.image}
               alt={cartItem.title}
-              height="180px"
-              width="150px"
+              height="500px"
+              width="50px"
             />
           </div>
           <div className="col-md-4">
