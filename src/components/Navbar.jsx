@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import Login from "./buttons/Login";
 import Signup from "./buttons/Signup";
-import CartBtn from "./buttons/CartBtn";
+import CartBtn from "./buttons/Cartbtn";
 
 export default function Navbar() {
   return (

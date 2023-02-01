@@ -29,7 +29,10 @@ export default function Cart() {
           </div>
           <div className="col-md-4">
             <h3>{cartItem.title}</h3>
-            <p className="lead fw-bold">{cartItem.price}</p>
+            <p className="lead fw-bold">${cartItem.price}</p>
+            <h3>Quantity: {cartItem.quantity}</h3>
+            <h4>Total Price</h4>
+            <h5>${parseFloat(cartItem.price)*parseInt(cartItem.quantity)}</h5>
           </div>
         </div>
       </div>
