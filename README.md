@@ -74,7 +74,7 @@ The handleCart function is defined to handle the button click events on the Add 
 
 Finally, the component returns the JSX for the product detail page, which consists of a container with two columns: one for the product image and one for the product details. The product image is displayed using a background image with the divStyle object. The product details include the title, price, description, quantity, and the Add to Cart/Remove from Cart button. The quantity can be adjusted using the "+" and "-" buttons, which call the setQty function to update the qty state value.
 
-![](Akanom/Spider-Restaurant/images/productdetail.png)
+![](images/productdetail.png)
 
 4.1 Redux reducer function
 
