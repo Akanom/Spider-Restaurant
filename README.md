@@ -128,9 +128,11 @@ This is a React functional component that displays a sign up modal. The componen
 8. Contact and About components
 
 8.1 Contact page
+
 This is a React component that represents a "Contact" page. The component is a functional component that returns a div containing HTML elements for displaying a form for the user to enter their name, email, and message. The form also has a submit button. The component uses Bootstrap CSS classes to style the form elements.
 
 8.2
+
 This is a React component that represents an "About" page. The component is a functional component that returns a div containing HTML elements for displaying text and an image about the company. The component uses Bootstrap CSS classes to style the text and the image. The component also uses the NavLink component from the react-router-dom library to create a link to the "Contact" page.
 
 **9. Navbar and Footer components**
